@@ -1,0 +1,42 @@
+﻿<Window x:Class="GetInfo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GetInfo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="406.463" Width="1060.488">
+    <Grid Background="LightBlue">
+        <TextBox x:Name="idTxt" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="10,99,0,0" IsEnabled="False"/>
+        <TextBox x:Name="locTxt" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="135,245,0,0"/>
+        <TextBox x:Name="nibaTxt" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="260,245,0,0" />
+        <TextBox x:Name="cmpTxt" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="260,99,0,0" IsEnabled="False"/>
+        <TextBox x:Name="serialTxt" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="135,99,0,0" IsEnabled="False"/>
+        <TextBox x:Name="inwIbaTxt" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="385,245,0,0"/>
+        <TextBox x:Name="osTxt" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="135,172,0,0" IsEnabled="False"/>
+        <TextBox x:Name="ipTxt" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="10,172,0,0" IsEnabled="False"/>
+        <TextBox x:Name="procTxt" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="260,172,0,0" IsEnabled="False"/>
+        <TextBox x:Name="ramTxt" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="385,172,0,0" IsEnabled="False"/>
+        <TextBox x:Name="storTxt" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="385,99,0,0" IsEnabled="False"/>
+        <Label x:Name="label" Content="ID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,68,0,0" Width="80"/>
+        <Label x:Name="label_Copy" Content="Lokalizacja" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="135,214,0,0" Width="80"/>
+        <Label x:Name="label_Copy1" Content="Numer IBA" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="260,214,0,0" Width="80"/>
+        <Label x:Name="label_Copy2" Content="Producent" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="260,68,0,0" Width="80"/>
+        <Label x:Name="label_Copy3" Content="Nr. Seryjny" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="135,68,0,0" Width="80"/>
+        <Label x:Name="label_Copy4" Content="Nr. Inw. IBA" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="385,214,0,0" Width="80"/>
+        <Label x:Name="label_Copy5" Content="OS" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="135,141,0,0" Width="80"/>
+        <Label x:Name="label_Copy6" Content="Adres IP" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,141,0,0" Width="80"/>
+        <Label x:Name="label_Copy7" Content="Procesor" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="260,141,0,0" Width="80"/>
+        <Label x:Name="label_Copy8" Content="Ram" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="385,141,0,0" Width="80"/>
+        <Label x:Name="label_Copy9" Content="Pojemnosc" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="385,68,0,0" Width="80"/>
+        <Button x:Name="sendBtn" Content="Przeslij" HorizontalAlignment="Left" Margin="340,315,0,0" VerticalAlignment="Top" Width="165" Height="50" Click="Button_Click"/>
+        <Label x:Name="label2" Content="Oprogramowanie do tworzenia inwentaryzacji" Height="26" Width="255" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <Label x:Name="label3" Content="Version: 1.0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,10,0,0" Width="70"/>
+        <Label x:Name="label_Copy10" Content="Użytkownik" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,214,0,0" Width="80"/>
+        <TextBox x:Name="usrTxt" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="10,245,0,0" IsEnabled="False"/>
+        <Button x:Name="refreshBtn" Content="Odśwież Widok" HorizontalAlignment="Left" Margin="519,315,0,0" VerticalAlignment="Top" Width="523" Height="50" Click="Button_Copy_Click"/>
+        <DataGrid x:Name="inwGrid" HorizontalAlignment="Left" Height="305" Margin="519,8,0,0" VerticalAlignment="Top" Width="523" SelectionChanged="InwGrid_SelectionChanged" />
+        <Button x:Name="button" Content="Clear" HorizontalAlignment="Left" Margin="10,315,0,0" VerticalAlignment="Top" Width="155" Height="50" Click="Button_Click_1"/>
+    </Grid>
+
+</Window>
